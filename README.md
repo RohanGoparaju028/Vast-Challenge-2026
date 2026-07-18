@@ -20,7 +20,7 @@ VAST_Challenge_2026_MC1/
 ├── MC1_final_00.json                   # Primary dataset (two-week agent communication log)
 ├── mc1 data description.md             # Official data description and schema reference
 ├── VAST Challenge 2026 MC1 Answer Sheet.htm  # Submission answer sheet template
-└── README.md                           s
+└── README.md                           
 ```
 
 ---
@@ -133,14 +133,3 @@ Were there leading indicators that such a release was possible? Specifically:
 - Were there earlier instances of behavior similar to what ultimately caused the release?
 - Why didn't those prior occasions result in noticeable action?
 
----
-
-## Submission Notes
-
-- The answer sheet (`VAST Challenge 2026 MC1 Answer Sheet.htm`) should be renamed `index.htm` for final submission
-- All hyperlinks in the answer sheet must be relative to the form
-- A video walkthrough demonstrating the visual analytics process is required
-- Only data supplied for MC1 should be used — no external or cross-challenge data
-- All VAST 2026 data is fully synthetic
-
-More details at: [https://vast-challenge.github.io/2026/](https://vast-challenge.github.io/2026/)

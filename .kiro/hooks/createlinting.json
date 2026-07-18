@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "apply linting",
+      "trigger": "PostFileSave",
+      "description": "Run pylint on all Python files after saving a .py file",
+      "matcher": "\\.py$",
+      "action": {
+        "type": "command",
+        "command": "cd $KIRO_WORKSPACE_ROOT && pylint *.py"
+      },
+      "enabled": true
+    }
+  ]
+}

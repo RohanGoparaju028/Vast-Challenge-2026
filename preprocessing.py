@@ -1,4 +1,8 @@
 import pandas as pd 
+import json 
 
 def preprocessing(f):
-    df = pd.read_json(f) 
+    with open(f) as file:
+        data = json.load(file)
+    df = pd.json_normalize(data['rounds'])
+    print(df.columns)

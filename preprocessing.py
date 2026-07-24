@@ -12,4 +12,8 @@ def preprocessing(f):
             communications.append(msg)
     df_communication = pd.json_normalize(communications )
     df = pd.concat([df_round,df_communication])
-    print(df.dtypes)
+    channels = []
+    for col in df.columns:
+        if col == 'channel':
+            channels.append(df[col])
+    print(channels)

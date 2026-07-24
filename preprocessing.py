@@ -11,9 +11,5 @@ def preprocessing(f):
             msg['hour'] = round['hour']
             communications.append(msg)
     df_communication = pd.json_normalize(communications )
-    df = pd.concat([df_round,df_communication])
-    channels = []
-    for col in df.columns:
-        if col == 'channel':
-            channels.append(df[col])
-    print(channels)
+    df = df_communication.merge(df_round,on="hour",how='left')
+    return df 

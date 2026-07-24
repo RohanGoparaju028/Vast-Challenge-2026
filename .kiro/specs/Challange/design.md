@@ -6,7 +6,7 @@ The project is a fully automated visual analytics pipeline that answers the thre
 
 ---
 
-## Architectur
+## Architecture
 
 The project is structured as a set of Python scripts connected through `main.py`. Each script is responsible for one logical layer — data loading, preprocessing, or analysis/visualization. Scripts do not depend on each other directly; they all receive clean DataFrames from the preprocessing layer.
 
